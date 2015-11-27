@@ -1,1 +1,122 @@
-hello worlds
+<html>
+<head>
+
+
+<title>UC-R WEBAPP </title>
+
+<script>
+function sendIt(myValue){     // simplifies sending info to the photon
+    document.all.myParameter.value=myValue
+    document.myForm.action = 'https://api.spark.io/v1/devices/' + document.all.myDeviceId.value + '/SWITCH'
+    document.all.mySend.value = document.myForm.action 
+    
+    document.myForm.submit();
+}
+</script>
+
+</head>
+
+<body onload="{
+   myStorage1 = localStorage.getItem('myStoredText1')
+   if(myStorage1  != null){      
+      document.getElementById('myToken').value = myStorage1 
+    }
+    
+    myStorage2 = localStorage.getItem('myStoredText2')
+    if(myStorage2  != null){
+       document.getElementById('myDeviceId').value = myStorage2 
+      
+    }
+    
+      
+}">
+
+  
+
+<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> URBAN CULTIVATOR TESTING WEBAPP </h2>
+
+
+
+ENTER DEVICE ID AND TOKEN.<br><br>
+
+
+
+Device ID:<input id="myDeviceId" name="myCoreID" type=password size=50 placeholder="78dd12345678123456"> 
+ASK ALI<br>
+
+
+<input id="myFunctionName" name="myFunction"  type=hidden  value="SWITCH" > 
+
+
+
+
+<form name="myForm" method="POST" action = "https://api.spark.io/v1/devices/sparkCoreName/myTurnOn" target="myFrameName"><br>
+
+<input id="myParameter" name="params" type=hidden > 
+
+Access Token:<input id="myToken" name="access_token" type=password size=50 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> 
+ASK ALI</a><br><br>
+
+</form>
+
+<input type="button" value="SAVE LOGIN!" onClick="{
+   localStorage.setItem('myStoredText1', document.all.myToken.value)   
+   localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
+   alert( document.all.myToken.value + ' ' +document.all.myDeviceId.value + ' \nHas been stored')
+}">
+
+
+<br><br>
+
+<input type="button" value="FAN ON" onClick="{
+    sendIt('fanon');
+}">
+
+
+<input type="button" value="FAN OFF" onClick="{
+    sendIt('fanoff');
+}">
+
+
+<br><br>
+
+<input type="button" value="LIGHTS ON" onClick="{
+    sendIt('lightson');
+}">
+
+
+<input type="button" value="LIGHTS OFF" onClick="{
+    sendIt('lightsoff');
+}">
+
+<br><br>
+
+<input type="button" value="FILL ON" onClick="{
+    sendIt('fillon');
+}">
+
+
+<input type="button" value="FILL OFF" onClick="{
+    sendIt('filloff');
+}">
+<br><br>
+
+
+
+<input type="button" value="DRAIN ON" onClick="{
+    sendIt('drainon');
+}">
+
+<input type="button" value="DRAIN OFF" onClick="{
+    sendIt('drainoff');
+}">
+<br><br>
+<input type=hidden id="mySend" value="">
+<iframe style="display:none" width="400" height="200" name="myFrameName" id="myFrameId"></iframe> 
+
+
+
+
+
+</body>
+</html>
