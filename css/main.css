@@ -21,6 +21,9 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 }
 input[type="button"].differentbutton {
     font-size:15px;
+    color:black;
+    background-color: white;
+    border-radius: 5px;
 }
 body {
     background-color: beige;
