@@ -14,14 +14,14 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-    margin:0 auto;
-    color:aqua;
-    background-color: black;
-    border-radius: 15px;
-    line-height: 50px;
-    vertical-align: middle;
-    width: 20em;
-    height: 5em;
+    	margin:0 auto;
+    	color:aqua;
+    	background-color: black;
+    	border-radius: 15px;
+	 line-height: 50px;
+	 vertical-align: middle;
+	 width: 20em;
+	 height: 5em;
     
 }
 input[type="button"].differentbutton {
