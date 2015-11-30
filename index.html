@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/> 
-<head>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/> 
+<head meta name="viewport" content="maximum-scale=1">
 
 
 <title>UC-R WEBAPP </title>
@@ -15,6 +15,20 @@ function sendIt(myValue){     // simplifies sending info to the photon
     document.myForm.submit();
 }
 </script>
+
+<script type="text/javascript">  
+  
+    function changeCss()   
+    {   
+        var tbs = document.getElementsByTagName('input');   
+        for (var loop = 0; loop < tbs.length; loop++)   
+        {   
+            if (tbs[loop].type == 'text')   
+                tbs[loop].className = 'blue'; // whatever class you want here...   
+        }   
+    }   
+</script>
+    
 
 </head>
 
@@ -61,7 +75,7 @@ ASK ALI</a><br><br>
 
 </form>
 
-<input type="button" value="SAVE LOGIN!" onClick="{
+<input type="button" class="differentbutton" value="SAVE LOGIN!" onClick="{
    localStorage.setItem('myStoredText1', document.all.myToken.value)   
    localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
    alert( document.all.myToken.value + ' ' +document.all.myDeviceId.value + ' \nHas been stored')
