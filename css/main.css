@@ -3,7 +3,7 @@ h2 {
 }
 a {
     text-decoration: none;
-        color: black;
+        color: white;
 }
 form {
     background-color: :yellow;
@@ -18,27 +18,28 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     background-color: limegreen;
     border-radius: 1em;
     line-height: 1em;
-    width: 10em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     margin-left: 30em;
     margin-right: 10em;
     
 }
 input[type="button"].differentbutton {
-    font-size:0.5em;
-    color:black;
-    background-color: white;
-    border-radius: 1em;
+    font-size:.75em;
+    color:white;
+    background-color: limegreen;
+    border-radius: .5em;
     width: 10em;
-    height: 2em;
+    height: 3em;
     margin:0 auto;
 }
 body {
-    background-color: beige;
+    background-color: Black;
     margin:0 auto
 }
 div {
    margin: auto;
     width: 25em;
         height:10em;
+    color: White
 }
