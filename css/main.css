@@ -18,13 +18,25 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     color:aqua;
     background-color: black;
     border-radius: 15px;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 20em;
+    height: 5em;
+    
 }
 input[type="button"].differentbutton {
     font-size:15px;
     color:black;
     background-color: white;
     border-radius: 5px;
+    width: 10em;
+    height: 5em;
+    
 }
 body {
     background-color: beige;
+    margin:0 auto
+}
+div {
+    margin: 0 auto
 }
