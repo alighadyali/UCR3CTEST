@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<link type="text/css" rel="stylesheet" href="css/main.css" > 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> 
+<meta name="viewport" content="maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/> 
+
 <title>UC-R WEBAPP </title>
 
 <script>
@@ -14,19 +15,6 @@ function sendIt(myValue){     // simplifies sending info to the photon
     
     document.myForm.submit();
 }
-</script>
-
-<script type="text/javascript">  
-  
-    function changeCss()   
-    {   
-        var tbs = document.getElementsByTagName('input');   
-        for (var loop = 0; loop < tbs.length; loop++)   
-        {   
-            if (tbs[loop].type == 'text')   
-                tbs[loop].className = 'blue'; // whatever class you want here...   
-        }   
-    }   
 </script>
     
 
@@ -49,15 +37,16 @@ function sendIt(myValue){     // simplifies sending info to the photon
 
   
 
-<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> URBAN CULTIVATOR TESTING WEBAPP </h2>
+<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> TESTING WEBAPP </h2>
+
+<div>
+
+<align=center>  ENTER DEVICE ID AND TOKEN.</align> <br><br>
 
 
 
-ENTER DEVICE ID AND TOKEN.<br><br>
-
-
-
-Device ID:<input id="myDeviceId" name="myCoreID" type=password size=50 placeholder="78dd12345678123456"> 
+Device ID:<br><br>
+<input id="myDeviceId" name="myCoreID" type=password size=40 placeholder="78dd12345678123456"> 
 ASK ALI<br>
 
 
@@ -70,8 +59,9 @@ ASK ALI<br>
 
 <input id="myParameter" name="params" type=hidden > 
 
-Access Token:<input id="myToken" name="access_token" type=password size=50 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> 
-ASK ALI</a><br><br>
+Access Token:<br>
+<input id="myToken" name="access_token" type=password size=40 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> ASK ALI</a><br><br>
+    
 
 </form>
 
@@ -80,7 +70,7 @@ ASK ALI</a><br><br>
    localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
    alert( document.all.myToken.value + ' ' +document.all.myDeviceId.value + ' \nHas been stored')
 }">
-
+</div>
 
 <br><br>
 
@@ -127,6 +117,8 @@ ASK ALI</a><br><br>
     sendIt('drainoff');
 }">
 <br><br>
+
+    
 <input type=hidden id="mySend" value="">
 <iframe style="display:none" width="400" height="200" name="myFrameName" id="myFrameId"></iframe> 
 
