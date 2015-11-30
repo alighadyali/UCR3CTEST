@@ -13,13 +13,15 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	font-size:1em;
 	font-weight:bold;
 	text-decoration:none;
-    color:aqua;
-    background-color: black;
+    margin:0 auto;
+    color:black;
+    background-color: limegreen;
     border-radius: 1em;
-    line-height: 2em;
-    width: 8em;
-    height: 2em;
-    margin-left: 5em;
+    line-height: 1em;
+    width: 10em;
+    height: 5em;
+    margin-left: 30em;
+    margin-right: 10em;
     
 }
 input[type="button"].differentbutton {
@@ -29,14 +31,15 @@ input[type="button"].differentbutton {
     border-radius: 1em;
     width: 10em;
     height: 2em;
-    margin-left: 1em;
-    line-height: 1em;
-    
+    margin-left: 70em;
 }
 body {
     background-color: beige;
     margin:0 auto
 }
 div {
-    margin-left: 20em;
+   align-content: center;
+    margin-left: 45em;
+    margin-right: 45em;
+        
 }
