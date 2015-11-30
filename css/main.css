@@ -16,7 +16,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     color:aqua;
     background-color: black;
     border-radius: 1em;
-    line-height: 1em;
+    line-height: 2em;
     width: 8em;
     height: 2em;
     margin-left: 10em;
