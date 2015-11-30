@@ -31,15 +31,14 @@ input[type="button"].differentbutton {
     border-radius: 1em;
     width: 10em;
     height: 2em;
-    margin-left: 70em;
+    margin:0 auto;
 }
 body {
     background-color: beige;
     margin:0 auto
 }
 div {
-   align-content: center;
-    margin-left: 45em;
-    margin-right: 45em;
-        
+   margin: auto;
+    width: 25em;
+        height:10em;
 }
