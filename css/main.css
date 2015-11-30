@@ -13,7 +13,6 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	font-size:1em;
 	font-weight:bold;
 	text-decoration:none;
-    margin:0 auto;
     color:aqua;
     background-color: black;
     border-radius: 1em;
@@ -30,6 +29,8 @@ input[type="button"].differentbutton {
     border-radius: 1em;
     width: 10em;
     height: 2em;
+    margin-left: 20em;
+    
     
 }
 body {
