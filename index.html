@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>  
 <head>
 
 
@@ -14,10 +15,12 @@ function sendIt(myValue){     // simplifies sending info to the photon
     document.myForm.submit();
 }
 </script>
-
+<meta name="viewport" content="initial-scale=1">
 </head>
 
-<body onload="{
+<body>
+    <div id="wrapper">
+      onload="{
    myStorage1 = localStorage.getItem('myStoredText1')
    if(myStorage1  != null){      
       document.getElementById('myToken').value = myStorage1 
@@ -34,7 +37,7 @@ function sendIt(myValue){     // simplifies sending info to the photon
 
   
 
-<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> URBAN CULTIVATOR TESTING WEBAPP </h2>
+<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> WEBAPP </h2>
 
 
 
@@ -118,6 +121,6 @@ ASK ALI</a><br><br>
 
 
 
-
+</div>
 </body>
 </html>
