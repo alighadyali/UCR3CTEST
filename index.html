@@ -18,9 +18,7 @@ function sendIt(myValue){     // simplifies sending info to the photon
 <meta name="viewport" content="initial-scale=1">
 </head>
 
-<body>
-    <div id="wrapper">
-      onload="{
+<body onload="{
    myStorage1 = localStorage.getItem('myStoredText1')
    if(myStorage1  != null){      
       document.getElementById('myToken').value = myStorage1 
@@ -121,6 +119,5 @@ ASK ALI</a><br><br>
 
 
 
-</div>
 </body>
 </html>
