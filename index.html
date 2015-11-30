@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>  
 <head>
 
 
@@ -15,7 +14,7 @@ function sendIt(myValue){     // simplifies sending info to the photon
     document.myForm.submit();
 }
 </script>
-<meta name="viewport" content="initial-scale=1">
+
 </head>
 
 <body onload="{
@@ -35,7 +34,7 @@ function sendIt(myValue){     // simplifies sending info to the photon
 
   
 
-<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> WEBAPP </h2>
+<h2 align=center><a href="http://www.urbancultivator.net/" >URBAN CULTIVATOR</a> URBAN CULTIVATOR TESTING WEBAPP </h2>
 
 
 
@@ -60,64 +59,3 @@ Access Token:<input id="myToken" name="access_token" type=password size=50 place
 ASK ALI</a><br><br>
 
 </form>
-
-<input type="button" value="SAVE LOGIN!" onClick="{
-   localStorage.setItem('myStoredText1', document.all.myToken.value)   
-   localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
-   alert( document.all.myToken.value + ' ' +document.all.myDeviceId.value + ' \nHas been stored')
-}">
-
-
-<br><br>
-
-<input type="button" value="FAN ON" onClick="{
-    sendIt('fanon');
-}">
-
-
-<input type="button" value="FAN OFF" onClick="{
-    sendIt('fanoff');
-}">
-
-
-<br><br>
-
-<input type="button" value="LIGHTS ON" onClick="{
-    sendIt('lightson');
-}">
-
-
-<input type="button" value="LIGHTS OFF" onClick="{
-    sendIt('lightsoff');
-}">
-
-<br><br>
-
-<input type="button" value="FILL ON" onClick="{
-    sendIt('fillon');
-}">
-
-
-<input type="button" value="FILL OFF" onClick="{
-    sendIt('filloff');
-}">
-<br><br>
-
-
-
-<input type="button" value="DRAIN ON" onClick="{
-    sendIt('drainon');
-}">
-
-<input type="button" value="DRAIN OFF" onClick="{
-    sendIt('drainoff');
-}">
-<br><br>
-<input type=hidden id="mySend" value="">
-<iframe style="display:none" width="400" height="200" name="myFrameName" id="myFrameId"></iframe> 
-
-
-
-
-</body>
-</html>
