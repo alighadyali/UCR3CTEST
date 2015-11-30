@@ -19,7 +19,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     line-height: 2em;
     width: 8em;
     height: 2em;
-    margin-left: 10em;
+    margin-left: 5em;
     
 }
 input[type="button"].differentbutton {
