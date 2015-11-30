@@ -19,8 +19,8 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     background-color: black;
     border-radius: 2em;
     line-height: 1em;
-    width: 10em;
-    height: 2em;
+    width: 15em;
+    height: 5em;
     
 }
 input[type="button"].differentbutton {
