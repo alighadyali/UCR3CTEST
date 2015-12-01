@@ -16,7 +16,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     margin:0 auto;
     color:black;
     background-color: limegreen;
-    border-radius: .5em;
+    border-radius: .25em;
     line-height: 3em;
     width: 8em;
     height: 5em;
@@ -24,9 +24,9 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: 2em
-    
+    padding: 1em;    
 }
+
 input[type="button"].differentbutton {
     font-size:.75em;
     color:white;
@@ -41,7 +41,7 @@ body {
     background-color: Black;
     margin:0 auto;
     width: 30em;
-    height: 65em;
+    height: 52em;
     margin:0 auto;    
 }
 div {
