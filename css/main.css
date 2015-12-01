@@ -36,7 +36,8 @@ input[type="button"].differentbutton {
     width: 10em;
     height: 3em;
     margin:0 auto;
-    padding: inherit
+    padding: inherit;
+    webkit-appearance: none;
 }
 body {
     background-color: Black;
