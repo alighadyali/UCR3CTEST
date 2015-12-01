@@ -41,13 +41,13 @@ function sendIt(myValue){     // simplifies sending info to the photon
 
 <div>
 
-<align=center>  ENTER DEVICE ID AND TOKEN.</align> <br><br>
+<align=center>  ENTER DEVICE ID AND TOKEN.</align> <br>
 
 
 
-Device ID:<br><br>
+Device ID:<br>
 <input id="myDeviceId" name="myCoreID" type=password size=40 placeholder="78dd12345678123456"> 
-ASK ALI<br>
+ASK ALI
 
 
 <input id="myFunctionName" name="myFunction"  type=hidden  value="SWITCH" > 
@@ -55,11 +55,11 @@ ASK ALI<br>
 
 
 
-<form name="myForm" method="POST" action = "https://api.spark.io/v1/devices/sparkCoreName/myTurnOn" target="myFrameName"><br>
+<form name="myForm" method="POST" action = "https://api.spark.io/v1/devices/sparkCoreName/myTurnOn" target="myFrameName">
 
 <input id="myParameter" name="params" type=hidden > 
 
-Access Token:<br>
+Access Token:
 <input id="myToken" name="access_token" type=password size=40 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> ASK ALI</a><br><br>
     
 
@@ -73,7 +73,7 @@ Access Token:<br>
 </div>
 
 <br><br>
-
+<span> 
 <input type="button" value="FAN ON" onClick="{
     sendIt('fanon');
 }">
@@ -82,21 +82,20 @@ Access Token:<br>
 <input type="button" value="FAN OFF" onClick="{
     sendIt('fanoff');
 }">
-
+</span>
 
 <br><br>
-
+<span>
 <input type="button" value="LIGHTS ON" onClick="{
     sendIt('lightson');
 }">
 
-
 <input type="button" value="LIGHTS OFF" onClick="{
     sendIt('lightsoff');
 }">
-
+</span>
 <br><br>
-
+<span>
 <input type="button" value="FILL ON" onClick="{
     sendIt('fillon');
 }">
@@ -106,9 +105,9 @@ Access Token:<br>
     sendIt('filloff');
 }">
 <br><br>
+</span>
 
-
-
+<span>
 <input type="button" value="DRAIN ON" onClick="{
     sendIt('drainon');
 }">
@@ -117,8 +116,8 @@ Access Token:<br>
     sendIt('drainoff');
 }">
 <br><br>
+</span>   
 
-    
 <input type=hidden id="mySend" value="">
 <iframe style="display:none" width="400" height="200" name="myFrameName" id="myFrameId"></iframe> 
 
