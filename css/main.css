@@ -29,25 +29,26 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 input[type="button"].differentbutton {
-    font-size:.75em;
+    font-size:.25em;
     color:white;
     background-color: limegreen;
     border-radius: 0em;
-    width: 10em;
-    height: 3em;
+    width: 8em;
+    height: 4em;
     margin:0 auto;
-    padding: inherit;
-    -webkit-appearance: none;
+    line-height: 1em;
+    -webkit-appearance: none;    
 }
 body {
     background-color: Black;
     margin:0 auto;
     width: 30em;
     height: 52em;
-    margin:0 auto;    
+    margin:0 auto;
+    
 }
 div {
-   margin: auto;
+   margin:0 auto;
     width: 25em;
         height:10em;
     color: White
