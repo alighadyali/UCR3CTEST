@@ -25,7 +25,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em; 
-    webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 input[type="button"].differentbutton {
@@ -37,7 +37,7 @@ input[type="button"].differentbutton {
     height: 3em;
     margin:0 auto;
     padding: inherit;
-    webkit-appearance: none;
+    -webkit-appearance: none;
 }
 body {
     background-color: Black;
