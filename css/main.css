@@ -16,14 +16,15 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     margin:0 auto;
     color:black;
     background-color: limegreen;
-    border-radius: 1em;
+    border-radius: .5em;
     line-height: 3em;
-    width: 10em;
-    height: 3em;
-    margin-left: 10em;
+    width: 8em;
+    height: 5em;
+    margin-left: 4em;
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+    padding: 2em
     
 }
 input[type="button"].differentbutton {
@@ -34,12 +35,13 @@ input[type="button"].differentbutton {
     width: 10em;
     height: 3em;
     margin:0 auto;
+    padding: inherit
 }
 body {
     background-color: Black;
     margin:0 auto;
-    width: 50em;
-    height: 100em;
+    width: 30em;
+    height: 65em;
     margin:0 auto;    
 }
 div {
